@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<style>
+
+
+body
+{
+    background: linear-gradient(#000, #151515);
+    /*background-color: #77B5FE;*/
+    background-color: black;
+    margin: 5px;
+    color: #fff;
+    font-family: Times New Roman, serif;
+}
+
+
+#blocCentrale
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 25%;
+    left: 10%;
+    height: 35%;
+    width: 40%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+
+#titre
+{
+    color: #fff;
+    font-family: Times New Roman, serif;
+    font-size: 28px;
+}
+
+a
+{
+    padding: 3px;
+    text-decoration:none;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 24px;
+}
+
+a:hover
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #0f0;
+}
+.nuagesmain
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 25%;
+    left: 10%;
+    height: 45%;
+    width: 40%;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: Times New Roman, serif;
+    color: white;
+}
+.nuagestitre
+{
+    color: #fff;
+    font-family: Times New Roman, serif;
+    font-size: 32px;
+}
+.nuagesmain a
+{
+    padding: 3px;
+    text-decoration:none;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nuagesmain a:hover
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #0f0;
+}
+</style>
+
+<canvas onmousemove="majCoorSouris(event);" style="position: fixed; margin: -3% 0% 0% -10%; padding: 0%; width: 110%" id="monCanvas">
+    Votre navigateur ne supporte pas les canvas ou JavaScript est déscativé.
+</canvas>
+
+<div class="nuagesmain">
+    <p class="nuagestitre">Awww, vous avez osé passer de l'autre côté du miroir !</p>
+    <p><a href="bubble_fall/jeu.html">Bubble Fall</a><p>
+    <p><a href="http://benja135.free.fr/boules/">Jeu des boules</a></p>
+    <p>Ce monde est expérimental, aucune cohérence physique n'est garantie...</p>
+</div>
+
+<script src="nuages.js"></script>
+</body>
+</html>
