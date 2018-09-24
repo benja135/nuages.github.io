@@ -1,16 +1,12 @@
 /*
- * Script JS pour l'accueil du site
- * Date de création : 04/04/2015
- * Date de dernière modification : 04/04/2015
+ * Date de dernière modification : 24/09/2018
  * Auteurs : LACHERAY Benjamin
  */
-
 
 /* Constantes */
 
 	const FPS = 40;
 	const vitesseCreation = 30;
-
 
 
 /* Variables */
@@ -369,7 +365,7 @@ this.hitTest = function(x1, y1, w1, h1, x2, y2, w2, h2){return !(x1 + w1 < x2 ||
     while(i--){
       var light = this.lightning[i];
       
-      this.ctx.strokeStyle = 'hsla(0, 100%, 100%, '+this.rand(10, 100)/100+')';
+      this.ctx.strokeStyle = 'hsla(60, 100%, 50%, '+this.rand(10, 100)/100+')';
       this.ctx.lineWidth = 1;
       if(this.rand(0, 30) == 0){
         this.ctx.lineWidth = 2;	
@@ -406,9 +402,9 @@ this.hitTest = function(x1, y1, w1, h1, x2, y2, w2, h2){return !(x1 + w1 < x2 ||
 /*      if(!light.hasFired){
         this.ctx.fillStyle = 'rgba(255, 255, 255, '+this.rand(4, 12)/100+')';
         this.ctx.fillRect(0, 0, this.cw, this.ch);	
-      }*/
+      }
       
-/*      if(this.rand(0, 30) == 0){
+      if(this.rand(0, 30) == 0){
         this.ctx.fillStyle = 'rgba(255, 255, 255, '+this.rand(1, 3)/100+')';
         this.ctx.fillRect(0, 0, this.cw, this.ch);	
       }	*/
@@ -438,7 +434,7 @@ this.hitTest = function(x1, y1, w1, h1, x2, y2, w2, h2){return !(x1 + w1 < x2 ||
 /* Clear Canvas
 /*=============================================================================*/
     this.clearCanvas = function(){
-/*      this.ctx.globalCompositeOperation = 'destination-out';
+/*    this.ctx.globalCompositeOperation = 'destination-out';
       this.ctx.fillStyle = 'rgba(0,0,0,'+this.rand(1, 30)/100+')';
       this.ctx.fillRect(0,0,this.cw,this.ch);
       this.ctx.globalCompositeOperation = 'source-over';*/
