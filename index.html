@@ -3,6 +3,7 @@
 <head>
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"> 
 </head>
 <body>
 <style>
@@ -11,26 +12,11 @@
 body
 {
     background: linear-gradient(#000, #151515);
-    /*background-color: #77B5FE;*/
     background-color: black;
     margin: 5px;
     color: #fff;
     font-family: Times New Roman, serif;
 }
-
-
-#blocCentrale
-{
-    background-color: rgba(255, 255, 255, 0.1);
-    position: fixed;
-    top: 25%;
-    left: 10%;
-    height: 35%;
-    width: 40%;
-    border-radius: 10px;
-    padding-left: 10px;
-}
-
 
 #titre
 {
@@ -45,6 +31,7 @@ a
     text-decoration:none;
     color: #fff;
     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
     font-size: 24px;
 }
 
@@ -52,24 +39,25 @@ a:hover
 {
     background-color: rgba(0, 0, 0, 0.3);
     color: #0f0;
+    border-radius: 5px;
 }
 .nuagesmain
 {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.03);
     position: fixed;
     top: 25%;
     left: 10%;
     height: 45%;
-    width: 40%;
+    width: 42%;
     border-radius: 10px;
     padding-left: 10px;
-    font-family: Times New Roman, serif;
+    font-family: 'Karla', sans-serif;
     color: white;
 }
 .nuagestitre
 {
     color: #fff;
-    font-family: Times New Roman, serif;
+    font-family: 'Karla', sans-serif;
     font-size: 32px;
 }
 .nuagesmain a
@@ -78,6 +66,7 @@ a:hover
     text-decoration:none;
     color: #fff;
     background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
 }
 
 .nuagesmain a:hover
@@ -95,7 +84,8 @@ a:hover
     <p class="nuagestitre">Awww, vous avez osé passer de l'autre côté du miroir !</p>
     <p><a href="bubble_fall/jeu.html">Bubble Fall</a><p>
     <p><a href="http://benja135.free.fr/boules/">Jeu des boules</a></p>
-    <p>Ce monde est expérimental, aucune cohérence physique n'est garantie...</p>
+    <br><br>
+    <p id="quote"></p>
 </div>
 
 <script src="nuages.js"></script>

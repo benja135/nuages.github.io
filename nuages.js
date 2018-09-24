@@ -403,15 +403,15 @@ this.hitTest = function(x1, y1, w1, h1, x2, y2, w2, h2){return !(x1 + w1 < x2 ||
         }
       }
       
-      if(!light.hasFired){
+/*      if(!light.hasFired){
         this.ctx.fillStyle = 'rgba(255, 255, 255, '+this.rand(4, 12)/100+')';
         this.ctx.fillRect(0, 0, this.cw, this.ch);	
-      }
+      }*/
       
-      if(this.rand(0, 30) == 0){
+/*      if(this.rand(0, 30) == 0){
         this.ctx.fillStyle = 'rgba(255, 255, 255, '+this.rand(1, 3)/100+')';
         this.ctx.fillRect(0, 0, this.cw, this.ch);	
-      }	
+      }	*/
       
       this.ctx.stroke();
     };
@@ -438,10 +438,10 @@ this.hitTest = function(x1, y1, w1, h1, x2, y2, w2, h2){return !(x1 + w1 < x2 ||
 /* Clear Canvas
 /*=============================================================================*/
     this.clearCanvas = function(){
-      this.ctx.globalCompositeOperation = 'destination-out';
+/*      this.ctx.globalCompositeOperation = 'destination-out';
       this.ctx.fillStyle = 'rgba(0,0,0,'+this.rand(1, 30)/100+')';
       this.ctx.fillRect(0,0,this.cw,this.ch);
-      this.ctx.globalCompositeOperation = 'source-over';
+      this.ctx.globalCompositeOperation = 'source-over';*/
     };
   
 /*=============================================================================*/	
@@ -517,4 +517,15 @@ $(window).on('load', function(){
 		setupRAF();
 		cl.init();
 	}
+});
+
+
+$(window).on('load', function(){
+	fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes').then(response => {
+	  return response.json();
+	}).then(data => {
+	  	$("#quote").html(data[0].quote + "<br>_" + data[0].author);
+	}).catch(err => {
+	  // Do something for an error here
+	});
 });
