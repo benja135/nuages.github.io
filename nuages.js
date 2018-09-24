@@ -524,4 +524,7 @@ $(window).on('load', function(){
 	}).catch(err => {
 	  // Do something for an error here
 	});
+	document.getElementsByTagName('body')[0].style = 
+			'background: linear-gradient(#000, #151515);'
+		+	' background-color: green;';
 });
